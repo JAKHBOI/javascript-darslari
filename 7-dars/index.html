@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>7-dars</title>
+</head>
+<body>
+
+	
+	<button id="btn">Meni bos</button>
+
+	<script src="script.js"></script>
+
+	<div id="text">Salom</div>
+	<div class="div2">div 2</div>
+
+	<a href=""  id="havola">Google</a>
+
+	<script>
+
+		// Dom ni ozgartiruvchiga yuklab olish Id bo'yicha
+		let text = document.getElementById('text');
+
+		// Dom ni ozgartiruvchiga yuklab olish class bo'yicha
+		// Array ko'rinishida qaytaradi 
+		let div2 = document.getElementsByClassName('div2');
+
+		// Dom ni ozgartiruvchiga yuklab olish teg bo'yicha
+		// Array ko'rinishida qaytaradi 
+		let divs = document.getElementsByTagName('div');
+
+
+		let div_class = document.querySelector('.div_class');
+		let div_id = document.querySelector('#div_id');
+
+		// Element qo'shish
+		let newDiv = document.createElement('div');
+		newDiv.innerHTML = 'Yangi div';
+
+		// Elementni o'chirish
+		// div2[0].remove();
+
+
+		// Elementga class qo'shish
+		text.classList.add('text_class');
+
+		let havola = document.getElementById('havola');
+		havola.href = 'https://www.google.com';
+	</script>
+</body>	
+</html>
